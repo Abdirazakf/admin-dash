@@ -14,14 +14,14 @@ body {
     background-color: white;
     grid-column: 2;
     grid-row: 1;
-    padding: 20px 30px 20px 30px;
+    padding: 0 30px 0 30px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr
 }
 
 .header > * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .search-bar > img {
@@ -40,6 +40,7 @@ body {
 
 .search-bar {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -47,10 +48,6 @@ body {
     grid-column: 1;
     display: flex;
     gap: 10px;
-}
-
-.account-greeting > * {
-    /* border: 1px solid black; */
 }
 
 .account-greeting > div > p {
@@ -61,11 +58,22 @@ body {
     margin: 0;
 }
 
-
 .account-greeting > img {
     width: 100px;
     height: 100px;
-    background-color: skyblue;
+}
+
+.account-info {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.account-info-pic {
+    width: 75px;
+    height: 75px;
 }
 
 

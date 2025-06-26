@@ -19,6 +19,11 @@ a {
     color: white;
 }
 
+.header > img[src$='.svg'],
+#card-icons > img[src$='.svg'] {
+    cursor: pointer;
+}
+
 .header {
     background-color: white;
     grid-column: 2;

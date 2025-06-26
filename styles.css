@@ -14,7 +14,60 @@ body {
     background-color: white;
     grid-column: 2;
     grid-row: 1;
+    padding: 20px 30px 20px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr
 }
+
+.header > * {
+    /* border: 1px solid black; */
+}
+
+.search-bar > img {
+    width: 25px;
+    height: 25px;
+}
+
+.search-bar > input {
+    width: 70%;
+    height: 30px;
+    padding-left: 15px;
+    background-color: #e2e8f0;
+    border: 1px grey;
+    border-radius: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 15px;
+}
+
+.account-greeting {
+    grid-column: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.account-greeting > * {
+    /* border: 1px solid black; */
+}
+
+.account-greeting > div > p {
+    margin-bottom: 0;
+}
+
+.account-greeting > div > h1 {
+    margin: 0;
+}
+
+
+.account-greeting > img {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+}
+
 
 .sidebar {
     background-color: #1991d2;
@@ -37,6 +90,11 @@ body {
     /* border: 1px solid black; */
 }
 
+.sidebar > div > img {
+    width: 30px;
+    height: 30px;
+}
+
 .dashboard-logo {
     font-size: 1.5rem;
     display: flex;
@@ -44,6 +102,11 @@ body {
     gap: 10px;
     margin-left: 0;
     margin-bottom: 20px;
+}
+
+#dash-logo-img {
+    width: 55px;
+    height: 55px;
 }
 
 .settings {

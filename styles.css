@@ -181,8 +181,9 @@ a {
     background-color: #e2e8f0;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 0.5fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    gap: 0 30px;
 }
 
 .content-area > h2 {
@@ -198,7 +199,7 @@ a {
 }
 
 .card {
-    width: 80%;
+    width: 100%;
     height: 80%;
     background-color: white;
     border-radius: 10px;
@@ -253,4 +254,36 @@ a {
 .card-6 {
     grid-column: 2;
     grid-row: 4;
+}
+
+.announcement-card {
+    grid-column: 3;
+    grid-row: 2 / 4;
+}
+
+#trending-header {
+    grid-column: 3;
+    grid-row: 3;
+    margin-top: 50px;
+}
+
+.right-side-card {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 30px 20px 30px 20px;
+    transition: box-shadow .3s;
+}
+
+.right-side-card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.trending-card {
+    grid-column: 3;
+    grid-row: 4;
+    height: 110%;
+    margin-top: -90px;
 }

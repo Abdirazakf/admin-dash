@@ -208,6 +208,7 @@ a {
     display: flex;
     justify-content: start;
     align-items: start;
+    overflow: auto;
 }
 
 .card > div {

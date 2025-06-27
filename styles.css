@@ -19,6 +19,10 @@ a {
     color: white;
 }
 
+p {
+    color: gray
+}
+
 .header > img[src$='.svg'],
 #card-icons > img[src$='.svg'] {
     cursor: pointer;
@@ -181,7 +185,7 @@ a {
     background-color: #e2e8f0;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 0.7fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
     gap: 0 30px;
 }
@@ -261,6 +265,11 @@ a {
     grid-row: 2 / 4;
 }
 
+.right-side-card > div > h4,
+.right-side-card > div > p {
+    margin: 0;
+}
+
 #trending-header {
     grid-column: 3;
     grid-row: 3;
@@ -273,7 +282,7 @@ a {
     background-color: white;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 30px 20px 30px 20px;
+    padding: 40px 30px 40px 30px;
     transition: box-shadow .3s;
 }
 

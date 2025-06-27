@@ -20,7 +20,12 @@ a {
 }
 
 p {
-    color: gray
+    color: gray;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
 }
 
 .header > img[src$='.svg'],
@@ -284,6 +289,7 @@ p {
     border-radius: 10px;
     padding: 40px 30px 40px 30px;
     transition: box-shadow .3s;
+    overflow: auto;
 }
 
 .right-side-card:hover {
@@ -295,4 +301,29 @@ p {
     grid-row: 4;
     height: 110%;
     margin-top: -90px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trending-card > div >img {
+    width: 75px;
+    height: 75px;
+}
+
+.trending-card > div {
+    display: flex;
+    gap: 20px;
+}
+
+.trending-card > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.trending-card > div > div > h4{
+    font-weight: 200;
 }
